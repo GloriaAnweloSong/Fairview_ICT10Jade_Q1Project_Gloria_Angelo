@@ -26,8 +26,14 @@ def create_order(e):
 # project
 
 def generation(e):
-    document.getElementById("output1").innerHTML = ""
+    document.getElementById("sku_output").innerHTML = "" # reset
 
-    get_word= document.getElementById("word").value
+    get_category= document.getElementById("category").value # get value
+    get_name= document.getElementById("name").value # get value
+    get_stock= document.getElementById("stock").value # get value
 
-    display(get_word[:3], target = "output1") # get the 1st 3 letters of the word (called slice)
+    gen_sku = get_category[:3].upper() + "-" + get_name[:4].upper() + "-" + get_stock
+    
+    display(get_word[:3], target = "sku_output") # get the 1st 3 letters of the word (called slice)
+
+    display("Generated SKU: ", gen_sku , target='sku_output')
