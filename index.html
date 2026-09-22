@@ -46,8 +46,7 @@
     <form>
 
     <!--Category Select-->
-            <label for="options">🫙 Category</label>
-            <br>
+            <label for="options">🫙 Category: </label>
             <select name="category "id="category" required>
                 <option> Kitchen Tools</option>
                 <option> Instruments</option>
@@ -56,14 +55,12 @@
             <br><br>
 
     <!--Product Name-->
-            <label for="product">📛 Product Name</label>
-            <br>
+            <label for="product">📛 Product Name: </label>
             <input type="text" id="name" name="name" placeholder="(example: Guitar)" required>
             <br><br>
 
     <!--Stock Quantity-->
-            <label for="stock">📦 Stock Quantity</label>
-            <br>
+            <label for="stock">📦 Stock Quantity: </label>
             <input type="number" id="stock" name="stock" placeholder="(example: 20)" required>
             <br><br>
 
@@ -71,9 +68,11 @@
 
     <!--Generate-->
             <button type="button" py-click="generation" id="btn">Generate</button>
-            <br><br>
+            <br>
 
     <!--Generation Output-->
+        <h4> ____Your SKU will appear here____</h4>
+
             <div id="sku_output">
                 <script type="py" src="main.py"></script>
             </div>
