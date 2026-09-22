@@ -26,12 +26,12 @@ def create_order(e):
 # project
 
 def generation(e):
-    document.getElementById("sku_output").innerHTML = "" # reset
+    document.getElementById("sku_output").innerHTML = "" # resets
 
-    get_category= document.getElementById("category").value # get value
-    get_name= document.getElementById("name").value # get value
-    get_stock= document.getElementById("stock").value # get value
+    get_category= document.getElementById("category").value # gets value
+    get_name= document.getElementById("name").value # gets value
+    get_stock= document.getElementById("stock").value # gets value
 
-    gen_sku = get_category[:3].upper() + "-" + get_name[:4].upper() + "-" + get_stock
+    gen_sku = get_category[:3].upper() + "-" + get_name[:4].upper() + "-" + get_stock # concatenates for the SKU
     
-    display("Generated SKU: ", gen_sku , target='sku_output')
+    display("Generated SKU: ", gen_sku , target='sku_output') # displays the SKU
