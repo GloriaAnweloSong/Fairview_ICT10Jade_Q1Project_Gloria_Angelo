@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1 Skills Test</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+
+    <style>
+        body{
+            background-color: rgb(47, 71, 148);
+            text-align: center;
+            color:rgb(99, 108, 82);
+            font-family: Sans-serif;
+        }
+
+        .container{
+            background-color:antiquewhite;
+            border-radius: 10px;
+            padding: 20px;
+            width: 25%;
+            margin-left: auto;
+            margin-right: auto;
+            border: 4px solid rgb(99, 108, 82);
+
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <h1 style="font-weight: bold">TV Tea! - 📺</h1>
+    <h4>☕ Our Menu:</h4>
+
+    <form>
+
+        <div class="box">
+            <input type="checkbox" id="input1" value="383.00">
+            <label for="Cook's Tea">🍳 Cook's Tea ($383.00)</label>
+        </div>
+            <br>
+
+        <div class="box">
+            <input type="checkbox" id="input2" value="532.00">
+            <label for="Rock's Tea">🎸 Rock's Tea ($532.00)</label>
+        </div>
+            <br>
+
+        <div class="box">
+            <input type="checkbox" id="input3" value="298.00">
+            <label for="Monster's Tea">👾 Monster's Tea ($298.00)</label>
+        </div>
+            <br><br>
+
+            <button type="button" py-click="create_order" style=
+            "color: rgb(230, 230, 103); background-color: rgb(47, 71, 148); border: 2px solid rgb(230, 230, 103);">
+            Order! ⭐</button>
+            <br>
+
+    </form>
+
+    <h4>🧾 _____________________</h4>
+    <h4>Receipt:</h4>
+        <div id="ST_output"></div>
+        <div id="VAT_output"></div>
+        <div id="TA_output"></div>
+    <h4>_____________________ 💫</h4>
+
+</div>
+
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>

@@ -34,25 +34,61 @@
 </head>
 <body>
 
-<!--- navbar WIP 
-
-<nav class="navbar navbar-full py-3">
-    <div class="container">
-
-        <h1>Tv Tea!</h1>
-
-    </div>
-
-
-</nav>
-
--->
-
-
+<!--insert navbar-->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
 
 <div class="box">
     <h1 style="font-weight: bold">TV Tea! - 📺</h1>
-    <h4>☕ Our Menu:</h4>
+    <h4>📄 SKU Generator </h4>
 
+    <form>
+
+    <!--Category Select-->
+            <label for="options">Category</label>
+            <br>
+            <select id="category_names">
+                <option> Kitchen Tools</option>
+                <option> Instruments</option>
+                <option> Games</option>
+            </select>
+            <br><br>
+
+    <!--Product Name-->
+            <label for="word">Product Name</label>
+            <br>
+            <input type="text" id="name" name="name" placeholder="(example: Guitar)" required>
+            <br><br>
+
+    <!--Stock Quantity-->
+            <label for="word">Stock Quantity</label>
+            <br>
+            <input type="text" id="stock" name="stock" placeholder="(example: 20)" required>
+            <br><br>
+
+<!---------------------------------------------------------------------------------------------------->
+
+    <!--Generate-->
+            <button type="button" py-click="generation" id="btn">Generate</button>
+
+    <!--Generation Output-->
+            <div id="output1">
+                <script type="py" src="main.py"></script>
+            </div>
+
+    </form>
 
 </div>
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!--insert footer-->
+
+
+    <script type="py" src="main.py"></script>
+    
+</body>
+</html>
+
