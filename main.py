@@ -34,6 +34,4 @@ def generation(e):
 
     gen_sku = get_category[:3].upper() + "-" + get_name[:4].upper() + "-" + get_stock
     
-    display(get_word[:3], target = "sku_output") # get the 1st 3 letters of the word (called slice)
-
     display("Generated SKU: ", gen_sku , target='sku_output')
